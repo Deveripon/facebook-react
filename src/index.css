@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Helvetica", sans-serif;
+    src: url("./assets/Fonts/Helvetica.ttf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: "Helvetica";
+    }
+}
+
+@layer utilities {
+    .face-shadow {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+    .input-border {
+        border: 1px solid #dddfe2;
+    }
+}
