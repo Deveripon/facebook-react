@@ -16,6 +16,7 @@ export default {
                     hover: "#36a420",
                 },
                 linkColor: "#1877f2",
+                secondaryText: "#606770",
             },
         },
     },
