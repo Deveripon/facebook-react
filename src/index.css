@@ -20,7 +20,8 @@
 }
 @layer utilities {
     .face-shadow {
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+            0 8px 16px rgba(0, 0, 0, 0.1);
     }
     .input-border {
         border: 1px solid #dddfe2;
@@ -30,5 +31,8 @@
     }
     .selcetor-translate {
         transform: translate(0px, -56px);
+    }
+    .empty-input {
+        border: 2px solid rgb(223, 22, 22);
     }
 }

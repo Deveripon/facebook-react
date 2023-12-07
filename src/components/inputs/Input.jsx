@@ -1,4 +1,5 @@
 const Input = ({
+    onBlur = "",
     className = "",
     width = "w-full",
     type = "text",
@@ -16,6 +17,7 @@ const Input = ({
                 placeholder={placeholder}
                 value={value}
                 onChange={handler}
+                onBlur={onBlur}
             />
         </>
     );

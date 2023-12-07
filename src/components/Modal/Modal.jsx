@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { useContext, useState } from "react";
 import ModalContext from "../../Context/ModalContext";
 import { FaQuestionCircle } from "react-icons/fa";
+import { toast } from "react-toastify";
+
 import {
     day,
     month,
@@ -30,6 +32,47 @@ const Modal = () => {
             [e.target.name]: e.target.value,
         }));
     }
+    // form validation
+    function handleFormSubmit(e) {
+        e.preventDefault();
+        if (!input.f_name) {
+            toast.error("First Name is required");
+        } else if (!input.s_name) {
+            toast.error("Surname is required");
+        } else if (!input.mobile_email) {
+            toast.error("Mobile or email is required");
+        } else if (!input.password) {
+            toast.error("Password is required");
+        } else if (!input.gender) {
+            toast.error("Gender is required");
+        } else {
+            toast.success("Sign up request successful");
+        }
+    }
+    //handle blur event
+    const [redBorder, setRedBorder] = useState({
+        f_name: false,
+        s_name: false,
+        mobile_email: false,
+        password: false,
+        gender: false,
+        day: false,
+        month: false,
+        year: false,
+    });
+    function handleInputBlur(e) {
+        if (e.target.value === "") {
+            setRedBorder((prevState) => ({
+                ...prevState,
+                [e.target.name]: true,
+            }));
+        } else {
+            setRedBorder((prevState) => ({
+                ...prevState,
+                [e.target.name]: false,
+            }));
+        }
+    }
 
     return (
         <>
@@ -54,10 +97,17 @@ const Modal = () => {
                         </div>
                         <div className="divider border-b mt-3 bg-[#606770]"></div>
                         <form
+                            onSubmit={handleFormSubmit}
                             action=""
                             className="reg-form px-3 py-3 flex justify-center items-center gap-3 flex-col">
                             <div className="input-group flex justify-center gap-3">
                                 <Input
+                                    className={
+                                        redBorder.f_name
+                                            ? "empty-input"
+                                            : ""
+                                    }
+                                    onBlur={handleInputBlur}
                                     name="f_name"
                                     placeholder="First name"
                                     value={input.f_name}
@@ -66,6 +116,12 @@ const Modal = () => {
                                     }
                                 />
                                 <Input
+                                    className={
+                                        redBorder.s_name
+                                            ? "empty-input"
+                                            : ""
+                                    }
+                                    onBlur={handleInputBlur}
                                     name="s_name"
                                     placeholder="Surname"
                                     value={input.s_name}
@@ -75,12 +131,24 @@ const Modal = () => {
                                 />
                             </div>
                             <Input
+                                className={
+                                    redBorder.mobile_email
+                                        ? "empty-input"
+                                        : ""
+                                }
+                                onBlur={handleInputBlur}
                                 name="mobile_email"
                                 placeholder="Mobile number or email address "
                                 value={input.mobile_email}
                                 handler={handleInputFields}
                             />
                             <Input
+                                className={
+                                    redBorder.password
+                                        ? "empty-input"
+                                        : ""
+                                }
+                                onBlur={handleInputBlur}
                                 name="password"
                                 placeholder="New Password"
                                 type="password"
@@ -302,11 +370,12 @@ const Modal = () => {
                                                         everyone.
                                                     </p>
                                                     <Input
-                                                        value={
-                                                            input.customGender
-                                                        }
+                                                        name="customGender"
                                                         handler={
                                                             handleInputFields
+                                                        }
+                                                        value={
+                                                            input.customGender
                                                         }
                                                         className="my-2"
                                                         placeholder="Gender(optional)"
