@@ -8,7 +8,7 @@ export default {
             },
             colors: {
                 primary: {
-                    DEFAULT: "#1877f2",
+                    DEFAULT: "#0866ff",
                     hover: "#365899",
                 },
                 secondary: {
