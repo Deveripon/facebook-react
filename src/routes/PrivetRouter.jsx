@@ -6,7 +6,7 @@ const privetRouter = [
         element: <Layouts />,
         children: [
             {
-                path: "/feed",
+                path: "/",
                 element: <Home />,
             },
         ],

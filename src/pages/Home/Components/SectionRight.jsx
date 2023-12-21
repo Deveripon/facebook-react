@@ -6,7 +6,7 @@ import Divider from "./Divider";
 import FriendRequestCard from "./FriendRequestCard";
 const SectionRight = () => {
     return (
-        <div className="right-section  max-h-screen overflow-y-scroll">
+        <div className="right-section fixed top-[75px] right-[10px] w-[20%] h-screen overflow-y-scroll">
             <div className="sponsord-section">
                 <Heading>Sponsord</Heading>
                 <div className="sponsord-item-area flex flex-col gap-4 my-3">

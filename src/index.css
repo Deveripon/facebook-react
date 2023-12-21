@@ -8,51 +8,68 @@
 @tailwind utilities;
 
 @layer base {
+    /* Scrollbar  */
+    /* for left section scrollbar */
     .left-section::-webkit-scrollbar {
-        width: 10px; /* Set the width of the scrollbar */
+        width: 10px;
+        scrollbar-width: thin;
+        scrollbar-color: #bcc0c4 transparent;
     }
-
+    .left-section:hover {
+        scrollbar-color: #bcc0c4 #e6e7eb;
+    }
     .left-section::-webkit-scrollbar-thumb {
-        background-color: #888; /* Color of the scrollbar thumb */
-        border-radius: 10px; /* Radius of the scrollbar thumb */
+        background-color: transparent;
+        border-radius: 6px;
     }
-
-    .left-section::-webkit-scrollbar-thumb:hover {
-        background-color: #a5a5a5; /* Color of the scrollbar thumb on hover */
+    .left-section:hover::-webkit-scrollbar-thumb {
+        background-color: #bcc0c4;
     }
-
-    .left-section::-webkit-scrollbar-track {
-        background-color: #aba9a9; /* Color of the scrollbar track */
-        border-radius: 10px; /* Radius of the scrollbar track */
+    .left-section::-webkit-scrollbar-track:hover {
+        background: #e6e7eb;
     }
-
-    .left-section:hover::-webkit-scrollbar {
-        width: 10px; /* Set the width of the scrollbar on hover */
-    }
-    /* //right section */
+    /* right section scrollbar */
     .right-section::-webkit-scrollbar {
-        width: 10px; /* Set the width of the scrollbar */
+        width: 10px;
+        scrollbar-width: thin;
+        scrollbar-color: #bcc0c4 transparent;
     }
-
+    .right-section:hover {
+        scrollbar-color: #bcc0c4 #e6e7eb;
+    }
     .right-section::-webkit-scrollbar-thumb {
-        background-color: #888; /* Color of the scrollbar thumb */
-        border-radius: 10px; /* Radius of the scrollbar thumb */
+        background-color: transparent;
+        border-radius: 6px;
+    }
+    .right-section:hover::-webkit-scrollbar-thumb {
+        background-color: #bcc0c4;
+    }
+    .right-section::-webkit-scrollbar-track:hover {
+        background: #e6e7eb;
+    }
+    /* story section */
+    .story-section::-webkit-scrollbar {
+        width: 10px;
+        scrollbar-width: thin;
+        scrollbar-color: #bcc0c4 transparent;
+    }
+    .story-section:hover {
+        scrollbar-color: #bcc0c4 #e6e7eb;
+    }
+    .story-section::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 6px;
+    }
+    .story-section:hover::-webkit-scrollbar-thumb {
+        background-color: #bcc0c4;
+    }
+    .story-section::-webkit-scrollbar-track:hover {
+        background: #e6e7eb;
     }
 
-    .right-section::-webkit-scrollbar-thumb:hover {
-        background-color: #a5a5a5; /* Color of the scrollbar thumb on hover */
-    }
-
-    .right-section::-webkit-scrollbar-track {
-        background-color: #aba9a9; /* Color of the scrollbar track */
-        border-radius: 10px; /* Radius of the scrollbar track */
-    }
-
-    .right-section:hover::-webkit-scrollbar {
-        width: 10px; /* Set the width of the scrollbar on hover */
-    }
     body {
         font-family: "Helvetica";
+        background: #f0f2f5;
     }
 }
 

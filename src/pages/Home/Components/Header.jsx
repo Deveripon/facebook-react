@@ -2,7 +2,7 @@ import facebookIcon from "../../../assets/images/facebook.png";
 import { IoIosSearch } from "react-icons/io";
 const Header = () => {
     return (
-        <header className="bg-white shadow-lg sticky top-0 z-50">
+        <header className="bg-white shadow-lg sticky w-full  top-[0px] z-[9999]">
             <nav className="home-menu flex px-5 justify-between items-center">
                 <div className="branding-with-search flex justify-start gap-3">
                     <div className="branding-icon h-10 w-10">

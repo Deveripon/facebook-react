@@ -1,6 +1,5 @@
 import Meta from "../../components/Meta/Meta";
 import CreatePost from "./Components/CreatePost";
-import Divider from "./Components/Divider";
 import Header from "./Components/Header";
 import Post from "./Components/Post";
 import SectionLeft from "./Components/SectionLeft";
@@ -17,19 +16,22 @@ const Home = () => {
                     type="image/x-icon"
                 />
             </Meta>
-            <section className="main-section bg-gray-100">
+            <section className="main-section min-h-screen">
                 <Header />
-                <div className="main-page-content grid grid-cols-5 py-5 px-5">
-                    <SectionLeft />
-                    <main className="main-section flex justify-center col-span-3">
-                        <div className="centerd-item w-[65%] overflow-hidden">
-                            <StoryBlock />
-                            <CreatePost />
-                            <Post />
-                        </div>
-                    </main>
-                    <SectionRight />
+                <SectionLeft />
+                <div className="centerd-section  absolute left-0 right-0 m-auto mt-5 mb-5 w-[38%] min-h-screen">
+                    <StoryBlock />
+
+                    <CreatePost />
+                    <div className="post-block flex flex-col gap-4">
+                        <Post />
+                        <Post />
+                        <Post />
+                        <Post />
+                        <Post />
+                    </div>
                 </div>
+                <SectionRight />
             </section>
         </>
     );
