@@ -4,6 +4,7 @@ import ContactCard from "./ContactCard";
 import Heading from "./Heading";
 import Divider from "./Divider";
 import FriendRequestCard from "./FriendRequestCard";
+import UserImage from "../../../assets/images/ripon.jpg";
 const SectionRight = () => {
     return (
         <div className="right-section fixed top-[75px] right-[10px] w-[20%] h-screen overflow-y-scroll">
@@ -57,7 +58,7 @@ const SectionRight = () => {
                                         width: "100%",
                                         borderRadius: "100%",
                                     }}
-                                    src="https://scontent.fdac24-2.fna.fbcdn.net/v/t39.30808-6/411080298_3671809989720838_6139402775500066882_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEaeROCMhxd9EAavCkNuoXYNl-09TEM3BY2X7T1MQzcFpPwanjARoOlACnDtKXuknTRWrb2o9vEZRHD1jbHag0S&_nc_ohc=ldMUB0eZNgsAX_cfo0X&_nc_ht=scontent.fdac24-2.fna&oh=00_AfDxndVTqED2qCeDyupsD3ky-MLSbb2U48VYZSy9U-EDYw&oe=65877E48"
+                                    src={UserImage}
                                     alt="user-image"
                                 />
                             </div>
@@ -74,14 +75,7 @@ const SectionRight = () => {
                         See all
                     </a>
                 </div>
-                <FriendRequestCard
-                    name="Sohel Rana Abid"
-                    image={
-                        "https://scontent.fdac24-3.fna.fbcdn.net/v/t39.30808-6/411662272_122110111658144145_1377619597110706940_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEWc-uTZoT1I4Yqsy-jNYx9InAPgjMrgoQicA-CMyuChIveK6ePekjjo5BG5tOS7M0ZdKvKz94RKUjYvgCjtpNG&_nc_ohc=hHTWT08notkAX8yLMbe&_nc_ht=scontent.fdac24-3.fna&oh=00_AfDEvFRtxB2hR7kB_qiqRLcM1nAKG-5wdzSR7ZEwctWrcQ&oe=65870C02"
-                    }
-                    mutual="1"
-                    time="2w"
-                />
+                <FriendRequestCard name="Sohel Rana Abid" image={UserImage} mutual="1" time="2w" />
             </div>
             <Divider />
             <div className="contact-list-section">
@@ -100,12 +94,7 @@ const SectionRight = () => {
                     </div>
                 </div>
                 <div className="contact-list py-3">
-                    <ContactCard
-                        name="Sohel Rana Khan"
-                        image={
-                            "https://scontent.fdac24-3.fna.fbcdn.net/v/t39.30808-6/411662272_122110111658144145_1377619597110706940_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEWc-uTZoT1I4Yqsy-jNYx9InAPgjMrgoQicA-CMyuChIveK6ePekjjo5BG5tOS7M0ZdKvKz94RKUjYvgCjtpNG&_nc_ohc=hHTWT08notkAX8yLMbe&_nc_ht=scontent.fdac24-3.fna&oh=00_AfDEvFRtxB2hR7kB_qiqRLcM1nAKG-5wdzSR7ZEwctWrcQ&oe=65870C02"
-                        }
-                    />
+                    <ContactCard name="Sohel Rana Khan" image={UserImage} />
                     <ContactCard
                         name="Ashraful Haque"
                         image={

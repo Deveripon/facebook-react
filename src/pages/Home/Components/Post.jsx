@@ -5,6 +5,7 @@ import Divider from "./Divider";
 import { PiThumbsUpLight } from "react-icons/pi";
 import { LuMessageCircle } from "react-icons/lu";
 import { PiShareFat } from "react-icons/pi";
+import UserImage from "../../../assets/images/ripon.jpg";
 const Post = () => {
     return (
         <>
@@ -16,7 +17,7 @@ const Post = () => {
                                 <a href="/feed" className="rounded-full">
                                     <img
                                         className="rounded-full"
-                                        src="https://scontent.fdac24-2.fna.fbcdn.net/v/t39.30808-6/411080298_3671809989720838_6139402775500066882_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEaeROCMhxd9EAavCkNuoXYNl-09TEM3BY2X7T1MQzcFpPwanjARoOlACnDtKXuknTRWrb2o9vEZRHD1jbHag0S&_nc_ohc=ldMUB0eZNgsAX_cfo0X&_nc_ht=scontent.fdac24-2.fna&oh=00_AfDxndVTqED2qCeDyupsD3ky-MLSbb2U48VYZSy9U-EDYw&oe=65877E48"
+                                        src={UserImage}
                                         alt="facebook-icon"
                                     />
                                 </a>
@@ -56,10 +57,7 @@ const Post = () => {
                             </p>
                         </div>
                         <div className="media mt-3">
-                            <img
-                                src="https://scontent.fdac24-4.fna.fbcdn.net/v/t39.30808-6/412693480_10163328476833574_488419176385018328_n.jpg?stp=dst-jpg_p843x403&_nc_cat=101&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeHDxStSeqDwk3rbsxBzmzjjVZUrEHI1SKRVlSsQcjVIpGlIAgX-2mIJLYHvU5jPem9dHKL3GCLygNQz0CjFunXz&_nc_ohc=WgmvTmi1KU0AX_TZEc-&_nc_ht=scontent.fdac24-4.fna&oh=00_AfA1KWWzylgHHUiGUAPQ4GuGua_e0Ra0-YMrL1EsYfPxjA&oe=6586FCE2"
-                                alt="post-image"
-                            />
+                            <img src={UserImage} alt="post-image" />
                         </div>
                     </div>
                     <div className="footer flex flex-col">

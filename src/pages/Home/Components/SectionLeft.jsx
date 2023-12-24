@@ -1,6 +1,7 @@
 import Divider from "./Divider";
 import Heading from "./Heading";
 import { FaAngleDown } from "react-icons/fa6";
+import UserImage from "../../../assets/images/ripon.jpg";
 const SectionLeft = () => {
     return (
         <div className="left-section fixed top-[75px] h-screen w-[20%] ml-5 overflow-y-scroll">
@@ -16,7 +17,7 @@ const SectionLeft = () => {
                                         width: "100%",
                                         borderRadius: "100%",
                                     }}
-                                    src="https://scontent.fdac24-2.fna.fbcdn.net/v/t39.30808-6/411080298_3671809989720838_6139402775500066882_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEaeROCMhxd9EAavCkNuoXYNl-09TEM3BY2X7T1MQzcFpPwanjARoOlACnDtKXuknTRWrb2o9vEZRHD1jbHag0S&_nc_ohc=ldMUB0eZNgsAX_cfo0X&_nc_ht=scontent.fdac24-2.fna&oh=00_AfDxndVTqED2qCeDyupsD3ky-MLSbb2U48VYZSy9U-EDYw&oe=65877E48"
+                                    src={UserImage}
                                     alt="user-image"
                                 />
                             </div>
@@ -192,7 +193,7 @@ const SectionLeft = () => {
                                         borderRadius: "100%",
                                         objectFit: "cover",
                                     }}
-                                    src="https://scontent.fdac24-1.fna.fbcdn.net/v/t39.30808-6/410348530_877227440725375_2859157470933003071_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeEw87RTAEgY4NKNkVyNKQ0wdHZuFFADa7p0dm4UUANruitguf8YESM_BXINkyBdh-iOFQjFbVBr5R34yOeqi9ws&_nc_ohc=4yp-o9LxHdoAX96S5G-&_nc_ht=scontent.fdac24-1.fna&oh=00_AfB5c-Sq-dU4f8E36Mfv_D1b_uKuqsbeoSiikhzG4dGYCw&oe=6587DD7B"
+                                    src={UserImage}
                                     alt="user-image"
                                 />
                             </div>
@@ -210,169 +211,7 @@ const SectionLeft = () => {
                                         borderRadius: "100%",
                                         objectFit: "cover",
                                     }}
-                                    src="https://scontent.fdac24-1.fna.fbcdn.net/v/t39.30808-6/410348530_877227440725375_2859157470933003071_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeEw87RTAEgY4NKNkVyNKQ0wdHZuFFADa7p0dm4UUANruitguf8YESM_BXINkyBdh-iOFQjFbVBr5R34yOeqi9ws&_nc_ohc=4yp-o9LxHdoAX96S5G-&_nc_ht=scontent.fdac24-1.fna&oh=00_AfB5c-Sq-dU4f8E36Mfv_D1b_uKuqsbeoSiikhzG4dGYCw&oe=6587DD7B"
-                                    alt="user-image"
-                                />
-                            </div>
-                            <span className="user-name">Learn With Sumit</span>
-                        </a>
-                    </li>
-                    <li className="">
-                        <a href="#" className="flex justify-start items-center gap-2">
-                            <div className="user-image h-10 w-10">
-                                <img
-                                    className="w-full user-image"
-                                    style={{
-                                        height: "100%",
-                                        width: "100%",
-                                        borderRadius: "100%",
-                                        objectFit: "cover",
-                                    }}
-                                    src="https://scontent.fdac24-1.fna.fbcdn.net/v/t39.30808-6/410348530_877227440725375_2859157470933003071_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeEw87RTAEgY4NKNkVyNKQ0wdHZuFFADa7p0dm4UUANruitguf8YESM_BXINkyBdh-iOFQjFbVBr5R34yOeqi9ws&_nc_ohc=4yp-o9LxHdoAX96S5G-&_nc_ht=scontent.fdac24-1.fna&oh=00_AfB5c-Sq-dU4f8E36Mfv_D1b_uKuqsbeoSiikhzG4dGYCw&oe=6587DD7B"
-                                    alt="user-image"
-                                />
-                            </div>
-                            <span className="user-name">Learn With Sumit</span>
-                        </a>
-                    </li>
-                    <li className="">
-                        <a href="#" className="flex justify-start items-center gap-2">
-                            <div className="user-image h-10 w-10">
-                                <img
-                                    className="w-full user-image"
-                                    style={{
-                                        height: "100%",
-                                        width: "100%",
-                                        borderRadius: "100%",
-                                        objectFit: "cover",
-                                    }}
-                                    src="https://scontent.fdac24-1.fna.fbcdn.net/v/t39.30808-6/410348530_877227440725375_2859157470933003071_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeEw87RTAEgY4NKNkVyNKQ0wdHZuFFADa7p0dm4UUANruitguf8YESM_BXINkyBdh-iOFQjFbVBr5R34yOeqi9ws&_nc_ohc=4yp-o9LxHdoAX96S5G-&_nc_ht=scontent.fdac24-1.fna&oh=00_AfB5c-Sq-dU4f8E36Mfv_D1b_uKuqsbeoSiikhzG4dGYCw&oe=6587DD7B"
-                                    alt="user-image"
-                                />
-                            </div>
-                            <span className="user-name">Learn With Sumit</span>
-                        </a>
-                    </li>
-                    <li className="">
-                        <a href="#" className="flex justify-start items-center gap-2">
-                            <div className="user-image h-10 w-10">
-                                <img
-                                    className="w-full user-image"
-                                    style={{
-                                        height: "100%",
-                                        width: "100%",
-                                        borderRadius: "100%",
-                                        objectFit: "cover",
-                                    }}
-                                    src="https://scontent.fdac24-1.fna.fbcdn.net/v/t39.30808-6/410348530_877227440725375_2859157470933003071_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeEw87RTAEgY4NKNkVyNKQ0wdHZuFFADa7p0dm4UUANruitguf8YESM_BXINkyBdh-iOFQjFbVBr5R34yOeqi9ws&_nc_ohc=4yp-o9LxHdoAX96S5G-&_nc_ht=scontent.fdac24-1.fna&oh=00_AfB5c-Sq-dU4f8E36Mfv_D1b_uKuqsbeoSiikhzG4dGYCw&oe=6587DD7B"
-                                    alt="user-image"
-                                />
-                            </div>
-                            <span className="user-name">Learn With Sumit</span>
-                        </a>
-                    </li>
-                    <li className="">
-                        <a href="#" className="flex justify-start items-center gap-2">
-                            <div className="user-image h-10 w-10">
-                                <img
-                                    className="w-full user-image"
-                                    style={{
-                                        height: "100%",
-                                        width: "100%",
-                                        borderRadius: "100%",
-                                        objectFit: "cover",
-                                    }}
-                                    src="https://scontent.fdac24-1.fna.fbcdn.net/v/t39.30808-6/410348530_877227440725375_2859157470933003071_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeEw87RTAEgY4NKNkVyNKQ0wdHZuFFADa7p0dm4UUANruitguf8YESM_BXINkyBdh-iOFQjFbVBr5R34yOeqi9ws&_nc_ohc=4yp-o9LxHdoAX96S5G-&_nc_ht=scontent.fdac24-1.fna&oh=00_AfB5c-Sq-dU4f8E36Mfv_D1b_uKuqsbeoSiikhzG4dGYCw&oe=6587DD7B"
-                                    alt="user-image"
-                                />
-                            </div>
-                            <span className="user-name">Learn With Sumit</span>
-                        </a>
-                    </li>
-                    <li className="">
-                        <a href="#" className="flex justify-start items-center gap-2">
-                            <div className="user-image h-10 w-10">
-                                <img
-                                    className="w-full user-image"
-                                    style={{
-                                        height: "100%",
-                                        width: "100%",
-                                        borderRadius: "100%",
-                                        objectFit: "cover",
-                                    }}
-                                    src="https://scontent.fdac24-1.fna.fbcdn.net/v/t39.30808-6/410348530_877227440725375_2859157470933003071_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeEw87RTAEgY4NKNkVyNKQ0wdHZuFFADa7p0dm4UUANruitguf8YESM_BXINkyBdh-iOFQjFbVBr5R34yOeqi9ws&_nc_ohc=4yp-o9LxHdoAX96S5G-&_nc_ht=scontent.fdac24-1.fna&oh=00_AfB5c-Sq-dU4f8E36Mfv_D1b_uKuqsbeoSiikhzG4dGYCw&oe=6587DD7B"
-                                    alt="user-image"
-                                />
-                            </div>
-                            <span className="user-name">Learn With Sumit</span>
-                        </a>
-                    </li>
-                    <li className="">
-                        <a href="#" className="flex justify-start items-center gap-2">
-                            <div className="user-image h-10 w-10">
-                                <img
-                                    className="w-full user-image"
-                                    style={{
-                                        height: "100%",
-                                        width: "100%",
-                                        borderRadius: "100%",
-                                        objectFit: "cover",
-                                    }}
-                                    src="https://scontent.fdac24-1.fna.fbcdn.net/v/t39.30808-6/410348530_877227440725375_2859157470933003071_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeEw87RTAEgY4NKNkVyNKQ0wdHZuFFADa7p0dm4UUANruitguf8YESM_BXINkyBdh-iOFQjFbVBr5R34yOeqi9ws&_nc_ohc=4yp-o9LxHdoAX96S5G-&_nc_ht=scontent.fdac24-1.fna&oh=00_AfB5c-Sq-dU4f8E36Mfv_D1b_uKuqsbeoSiikhzG4dGYCw&oe=6587DD7B"
-                                    alt="user-image"
-                                />
-                            </div>
-                            <span className="user-name">Learn With Sumit</span>
-                        </a>
-                    </li>
-                    <li className="">
-                        <a href="#" className="flex justify-start items-center gap-2">
-                            <div className="user-image h-10 w-10">
-                                <img
-                                    className="w-full user-image"
-                                    style={{
-                                        height: "100%",
-                                        width: "100%",
-                                        borderRadius: "100%",
-                                        objectFit: "cover",
-                                    }}
-                                    src="https://scontent.fdac24-1.fna.fbcdn.net/v/t39.30808-6/410348530_877227440725375_2859157470933003071_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeEw87RTAEgY4NKNkVyNKQ0wdHZuFFADa7p0dm4UUANruitguf8YESM_BXINkyBdh-iOFQjFbVBr5R34yOeqi9ws&_nc_ohc=4yp-o9LxHdoAX96S5G-&_nc_ht=scontent.fdac24-1.fna&oh=00_AfB5c-Sq-dU4f8E36Mfv_D1b_uKuqsbeoSiikhzG4dGYCw&oe=6587DD7B"
-                                    alt="user-image"
-                                />
-                            </div>
-                            <span className="user-name">Learn With Sumit</span>
-                        </a>
-                    </li>
-                    <li className="">
-                        <a href="#" className="flex justify-start items-center gap-2">
-                            <div className="user-image h-10 w-10">
-                                <img
-                                    className="w-full user-image"
-                                    style={{
-                                        height: "100%",
-                                        width: "100%",
-                                        borderRadius: "100%",
-                                        objectFit: "cover",
-                                    }}
-                                    src="https://scontent.fdac24-1.fna.fbcdn.net/v/t39.30808-6/410348530_877227440725375_2859157470933003071_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeEw87RTAEgY4NKNkVyNKQ0wdHZuFFADa7p0dm4UUANruitguf8YESM_BXINkyBdh-iOFQjFbVBr5R34yOeqi9ws&_nc_ohc=4yp-o9LxHdoAX96S5G-&_nc_ht=scontent.fdac24-1.fna&oh=00_AfB5c-Sq-dU4f8E36Mfv_D1b_uKuqsbeoSiikhzG4dGYCw&oe=6587DD7B"
-                                    alt="user-image"
-                                />
-                            </div>
-                            <span className="user-name">Learn With Sumit</span>
-                        </a>
-                    </li>
-                    <li className="">
-                        <a href="#" className="flex justify-start items-center gap-2">
-                            <div className="user-image h-10 w-10">
-                                <img
-                                    className="w-full user-image"
-                                    style={{
-                                        height: "100%",
-                                        width: "100%",
-                                        borderRadius: "100%",
-                                        objectFit: "cover",
-                                    }}
-                                    src="https://scontent.fdac24-1.fna.fbcdn.net/v/t39.30808-6/410348530_877227440725375_2859157470933003071_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeEw87RTAEgY4NKNkVyNKQ0wdHZuFFADa7p0dm4UUANruitguf8YESM_BXINkyBdh-iOFQjFbVBr5R34yOeqi9ws&_nc_ohc=4yp-o9LxHdoAX96S5G-&_nc_ht=scontent.fdac24-1.fna&oh=00_AfB5c-Sq-dU4f8E36Mfv_D1b_uKuqsbeoSiikhzG4dGYCw&oe=6587DD7B"
+                                    src={UserImage}
                                     alt="user-image"
                                 />
                             </div>

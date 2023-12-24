@@ -1,19 +1,18 @@
 import Divider from "./Divider";
+import UserImage from "../../../assets/images/ripon.jpg";
 
-const CreatePost = () => {
+const CreatePost = ({ showModal }) => {
     return (
         <div className="create-post-section shadow-md border border-gray-200  bg-white p-3 my-5 rounded-md">
             <div className="top flex items-center">
                 <div className="user-image h-[60px] w-[60px]">
                     <a href="/feed" className="rounded-full">
-                        <img
-                            className="rounded-full"
-                            src="https://scontent.fdac24-2.fna.fbcdn.net/v/t39.30808-6/411080298_3671809989720838_6139402775500066882_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEaeROCMhxd9EAavCkNuoXYNl-09TEM3BY2X7T1MQzcFpPwanjARoOlACnDtKXuknTRWrb2o9vEZRHD1jbHag0S&_nc_ohc=ldMUB0eZNgsAX_cfo0X&_nc_ht=scontent.fdac24-2.fna&oh=00_AfDxndVTqED2qCeDyupsD3ky-MLSbb2U48VYZSy9U-EDYw&oe=65877E48"
-                            alt="facebook-icon"
-                        />
+                        <img className="rounded-full" src={UserImage} alt="facebook-icon" />
                     </a>
                 </div>
-                <button className="bg-gray-200 flex justify-start items-center px-5 ml-3  py-[8px] rounded-full w-full">
+                <button
+                    onClick={showModal}
+                    className="bg-gray-200 flex justify-start items-center px-5 ml-3  py-[8px] rounded-full w-full">
                     Whats on your mind, Md Shahadat ?
                 </button>
             </div>

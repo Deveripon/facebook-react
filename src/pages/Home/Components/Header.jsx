@@ -1,5 +1,6 @@
 import facebookIcon from "../../../assets/images/facebook.png";
 import { IoIosSearch } from "react-icons/io";
+import userIMage from "../../../assets/images/ripon.jpg";
 const Header = () => {
     return (
         <header className="bg-white shadow-lg sticky w-full  top-[0px] z-[9999]">
@@ -148,7 +149,7 @@ const Header = () => {
                                         width: "100%",
                                         borderRadius: "100%",
                                     }}
-                                    src="https://scontent.fdac24-2.fna.fbcdn.net/v/t39.30808-6/411080298_3671809989720838_6139402775500066882_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEaeROCMhxd9EAavCkNuoXYNl-09TEM3BY2X7T1MQzcFpPwanjARoOlACnDtKXuknTRWrb2o9vEZRHD1jbHag0S&_nc_ohc=ldMUB0eZNgsAX_cfo0X&_nc_ht=scontent.fdac24-2.fna&oh=00_AfDxndVTqED2qCeDyupsD3ky-MLSbb2U48VYZSy9U-EDYw&oe=65877E48"
+                                    src={userIMage}
                                     alt="user-image"
                                 />
                             </a>

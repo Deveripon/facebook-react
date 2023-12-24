@@ -1,19 +1,16 @@
 import { GoPlus } from "react-icons/go";
 import Story from "./Story";
+import UserImage from "../../../assets/images/ripon.jpg";
 const StoryBlock = () => {
     return (
         <>
             <section className="story-section flex w-full gap-2 overflow-x-scroll">
-                <div
-                    className="create-strory-block h-[260px] min-w-[150px] rounded-xl relative"
-                    style={{
-                        backgroundImage:
-                            'url("https://scontent.fdac24-2.fna.fbcdn.net/v/t39.30808-6/411080298_3671809989720838_6139402775500066882_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEaeROCMhxd9EAavCkNuoXYNl-09TEM3BY2X7T1MQzcFpPwanjARoOlACnDtKXuknTRWrb2o9vEZRHD1jbHag0S&_nc_ohc=ldMUB0eZNgsAX_cfo0X&_nc_ht=scontent.fdac24-2.fna&oh=00_AfDxndVTqED2qCeDyupsD3ky-MLSbb2U48VYZSy9U-EDYw&oe=65877E48")',
-                        objectFit: "contain",
-                        backgroundSize: "280px 290px",
-                        backgroundPosition: "center center",
-                        backgroundRepeat: "no-repeat",
-                    }}>
+                <div className={`create-strory-block h-[260px] min-w-[150px] rounded-xl relative`}>
+                    <img
+                        className="rounded-md h-[250px] object-cover w-full"
+                        src={UserImage}
+                        alt="user-image"
+                    />
                     <div className="overflow absolute top-0 bottom-0 left-0 right-0 transform duration-100 hover:bg-gray-800 opacity-20 rounded-xl"></div>
                     <div className="create-button flex justify-center items-center w-[150px] h-[50px] z-50 bg-white rounded-b-xl absolute bottom-0">
                         <label

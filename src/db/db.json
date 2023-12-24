@@ -1,0 +1,19 @@
+{
+    "posts": [
+        {
+            "postContent": ":) Perfect Dish",
+            "media": "https://c1.wallpaperflare.com/preview/166/884/864/skewer-kebab-barbecue-food.jpg",
+            "id": 2
+        },
+        {
+            "postContent": "second post",
+            "media": "https://c1.wallpaperflare.com/preview/166/884/864/skewer-kebab-barbecue-food.jpg",
+            "id": 3
+        },
+        {
+            "postContent": "3rd post",
+            "media": "https://c1.wallpaperflare.com/preview/166/884/864/skewer-kebab-barbecue-food.jpg",
+            "id": 5
+        }
+    ]
+}
